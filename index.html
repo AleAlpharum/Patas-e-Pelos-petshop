@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patas & Pelos Petshop — produtos e cuidados para cães e gatos.">
+  <title>Patas &amp; Pelos Petshop</title>
+  <style>
+    :root {
+      --ink: #35243d;
+      --muted: #695873;
+      --cream: #f5f0e7;
+      --lavender: #eee8f5;
+      --white: #fffdf9;
+      --accent: #b18bbd;
+      --line: #e2d8e7;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 28px 6%;
+      background: var(--lavender);
+      border-bottom: 1px solid var(--line);
+    }
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand { margin: 0; font-size: clamp(1.7rem, 4vw, 2.5rem); letter-spacing: -1px; }
+    header p { margin: 5px 0 18px; color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+    nav a { color: var(--ink); text-decoration: none; font-weight: 700; }
+    nav a:hover { color: #805b91; text-decoration: underline; }
+    main { width: min(1180px, 90%); margin: 0 auto; padding: 42px 0 60px; }
+    .intro { margin-bottom: 34px; }
+    .intro h2 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -1px; }
+    .intro p { margin: 0; color: var(--muted); }
+    section { margin: 44px 0; scroll-margin-top: 20px; }
+    section > h2 { margin: 0 0 18px; font-size: 1.7rem; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+    article {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(53,36,61,.06);
+    }
+    .product-art {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      background: var(--lavender);
+    }
+    .product-info { padding: 16px 18px 20px; }
+    .product-info h3 { margin: 0 0 6px; font-size: 1.1rem; }
+    .product-info p { margin: 5px 0; color: var(--muted); }
+    .price { color: var(--ink) !important; font-weight: 700; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .service { padding: 22px; background: var(--lavender); border-radius: 16px; }
+    .service h3 { margin: 0 0 8px; }
+    .service p { margin: 6px 0; color: var(--muted); }
+    footer {
+      padding: 32px 6%;
+      background: var(--ink);
+      color: #fff;
+    }
+    footer h2 { margin-top: 0; }
+    footer p { margin: 6px 0; color: #eee5f1; }
+    footer a { color: #fff; }
+    @media (max-width: 560px) {
+      header { padding: 22px 5%; }
+      main { width: 92%; padding-top: 30px; }
+      .products { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <h1 class="brand">Patas &amp; Pelos Petshop</h1>
+      <strong>🐾 Cuidado em cada detalhe</strong>
+    </div>
+    <p>Produtos e cuidados para o bem-estar do seu melhor amigo.</p>
+    <nav aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#alimentacao">Alimentação</a>
+      <a href="#brinquedos">Brinquedos</a>
+      <a href="#acessorios">Acessórios</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <div class="intro">
+      <h2>Bem-vindo ao Patas &amp; Pelos!</h2>
+      <p>Confira nossa seleção de produtos e serviços para cães e gatos. Os valores são ilustrativos para este projeto acadêmico.</p>
+    </div>
+
+    <section id="alimentacao">
+      <h2>Alimentação</h2>
+      <div class="products">
+        <article>
+          <img class="product-art" src="imagens/racao-cachorro.png" alt="Arte do Figma: ração de cachorro">
+          <div class="product-info">
+            <h3>Ração para cães adultos — pacote 1 kg</h3>
+            <p>Alimento seco completo para cães adultos.</p>
+            <p class="price">Valor: R$ 24,90</p>
+          </div>
+        </article>
+        <article>
+          <img class="product-art" src="imagens/racao-gato.png" alt="Arte do Figma: ração de gato">
+          <div class="product-info">
+            <h3>Ração para gatos adultos — pacote 1 kg</h3>
+            <p>Alimento seco para gatos adultos.</p>
+            <p class="price">Valor: R$ 29,90</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="brinquedos">
+      <h2>Brinquedos</h2>
+      <div class="products">
+        <article>
+          <img class="product-art" src="imagens/bola.png" alt="Arte do Figma: bola para pets">
+          <div class="product-info">
+            <h3>Bola recreativa para cães</h3>
+            <p>Bola para momentos de brincadeira e atividade.</p>
+            <p class="price">Valor: R$ 14,90</p>
+          </div>
+        </article>
+        <article>
+          <img class="product-art" src="imagens/arranhador.png" alt="Arte do Figma: arranhador para gatos">
+          <div class="product-info">
+            <h3>Arranhador compacto para gatos</h3>
+            <p>Acessório para estimular o comportamento natural de arranhar.</p>
+            <p class="price">Valor: R$ 39,90</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="acessorios">
+      <h2>Acessórios</h2>
+      <div class="products">
+        <article>
+          <img class="product-art" src="imagens/coleira.png" alt="Arte do Figma: coleira">
+          <div class="product-info">
+            <h3>Coleira ajustável</h3>
+            <p>Coleira ajustável para passeios, conforme o tamanho do pet.</p>
+            <p class="price">Valor: R$ 19,90</p>
+          </div>
+        </article>
+        <article>
+          <img class="product-art" src="imagens/comedouro.png" alt="Arte do Figma: comedouro">
+          <div class="product-info">
+            <h3>Comedouro para pets</h3>
+            <p>Recipiente reutilizável para água ou alimento.</p>
+            <p class="price">Valor: R$ 17,90</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="services">
+        <article class="service">
+          <h3>Banho simples</h3>
+          <p>Higienização básica para cães de pequeno porte.</p>
+          <p><strong>Valor:</strong> R$ 45,00</p>
+          <p><strong>Tele-busca:</strong> Não disponível.</p>
+        </article>
+        <article class="service">
+          <h3>Tosa higiênica</h3>
+          <p>Serviço de tosa higiênica para cães, mediante agendamento.</p>
+          <p><strong>Valor:</strong> R$ 30,00</p>
+          <p><strong>Tele-busca:</strong> Não disponível.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <h2>Contato e informações</h2>
+    <p><strong>Patas &amp; Pelos Petshop</strong></p>
+    <p>E-mail ilustrativo: contato@patasepelos.example</p>
+    <p>Telefone ilustrativo: (51) 3000-0000</p>
+    <p>Autoria: inserir nome do estudante antes da entrega.</p>
+    <p>Projeto acadêmico — Fundamentos de Sistemas Web.</p>
+    <p><a href="#inicio">Voltar ao início</a></p>
+    <p>Produtos, preços e contatos são fictícios e utilizados apenas para fins acadêmicos.</p>
+  </footer>
+</body>
+</html>
